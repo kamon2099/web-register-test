@@ -1,0 +1,23 @@
+{
+  "name": "register-web-ui-testing",
+  "version": "1.0.0",
+  "description": "for first test with a playwright",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+    "tests:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "tests:e2e": "playwright test --config=../e2e/e2e.config.ts --project=Chromium",
+    "tests:api": "playwright test --config=playwright.config.ts --project=Chromium"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.33.0",
+    "@types/node": "^20.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "moment": "^2.29.4"
+  }
+}
